@@ -1,0 +1,299 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>US OVER SHOES | Contacto</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="images/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<script
+		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<script src="js/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+		integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$(".dropdown img.flag").addClass("flagvisibility");
+
+			$(".dropdown dt a").click(function () {
+				$(".dropdown dd ul").toggle();
+			});
+
+			$(".dropdown dd ul li a").click(function () {
+				var text = $(this).html();
+				$(".dropdown dt a span").html(text);
+				$(".dropdown dd ul").hide();
+				$("#result").html("Selected value is: " + getSelectedValue("sample"));
+			});
+
+			function getSelectedValue(id) {
+				return $("#" + id).find("dt a span.value").html();
+			}
+
+			$(document).bind('click', function (e) {
+				var $clicked = $(e.target);
+				if (!$clicked.parents().hasClass("dropdown"))
+					$(".dropdown dd ul").hide();
+			});
+
+
+			$("#flagSwitcher").click(function () {
+				$(".dropdown img.flag").toggleClass("flagvisibility");
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="header-left">
+						<div class="logo">
+							<a href="index.html"><img src="images/logo.png" alt="" /></a>
+						</div>
+						<div class="menu">
+							<a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+							<ul class="nav" id="nav">
+								<li><a href="list.html">Catalogo</a></li>
+								<li><a href="about.html">Nosotros</a></li>
+								<li class="current"><a href="contact.html">Contacto</a></li>
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="header_right">
+						<!-- start search-->
+						<div class="search-box">
+							<div id="sb-search" class="sb-search">
+								<form>
+									<input class="sb-search-input" placeholder=" Buscar" type="search"
+										name="search" id="search">
+									<input class="sb-search-submit" type="submit" value="">
+									<span class="sb-icon-search"> </span>
+								</form>
+							</div>
+						</div>
+						<!----search-scripts---->
+						<script src="js/classie.js"></script>
+						<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch(document.getElementById('sb-search'));
+						</script> 
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="shop_top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7">
+						<div class="map">
+							<iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0"
+							marginwidth="0"
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d478.2584569934374!2d-101.85578617986411!3d21.023354892320615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842be8455b3ad251%3A0xd4a084f6e1ea7947!2zR2FyY8OtYSBNdcOxb3ogSm9zw6kgRWzDrWFz!5e1!3m2!1ses-419!2smx!4v1623269240892!5m2!1ses-419!2smx"  ></iframe>
+
+ 
+								<br><small><a
+									href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d478.2584569934374!2d-101.85578617986411!3d21.023354892320615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842be8455b3ad251%3A0xd4a084f6e1ea7947!2zR2FyY8OtYSBNdcOxb3ogSm9zw6kgRWzDrWFz!5e1!3m2!1ses-419!2smx!4v1623269240892!5m2!1ses-419!2smx"
+									style="color:#666;text-align:left;font-size:12px"></a></small>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<p class="m_8">Estamos listos para brindarte el mejor servicio.
+							Contacta a nuestro número telefónico o entra a
+							nuestra página de Facebook para realizar tu pedido </p>
+						<div class="address">
+							<p>Calle Jose Maria Morelos 323, Zona centro, San Francisco del Rincon</p> 
+							<p>Telefono:476 743 5878</p> 
+							<p>Email: <span>usover@gmail.com</span></p>
+							<p>Siguenos en: <span>Facebook</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 contact">
+						<form method="post" action="#">
+							<div class="to">
+								<input type="text" class="text" value="Nombre" onfocus="this.value = '';"
+									onblur="if (this.value == '') {this.value = 'Nombre';}">
+								<input type="text" class="text" value="Correo electronico" onfocus="this.value = '';"
+									onblur="if (this.value == '') {this.value = 'Correo electronico';}">
+								<input type="text" class="text" value="Asunto" onfocus="this.value = '';"
+									onblur="if (this.value == '') {this.value = 'Asunto';}">
+							</div>
+							<div class="text">
+								<textarea value="Mensaje:" onfocus="this.value = '';"
+									onblur="if (this.value == '') {this.value = 'Mensaje';}">Mensaje:</textarea>
+								<div class="form-submit">
+									<input name="Enviar" type="submit" id="submit" value="Enviar"><br>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</form>
+					</div>
+					<div class="col-0 col-md-8"></div>
+					<div class="col-12 col-md-4 text-right">
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+							Aviso de privacidad 
+						  </button>
+					</div>
+				</div>
+			</div> 
+		</div>
+		
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<ul class="footer_box">
+						<h4><a href="about.html">Nosotros</a></h4>
+						<li>
+							<p style="color: white;">Somos una empresa dedicada
+								al calzado a tu gusto </p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="footer_box">
+						<h4><a href="list.html">Catalogo</a></h4>
+						<li><a href="hombre urbano.html">Hombre Urbano</a></li>
+						<li><a href="hombre tenis.html">Hombre Tenis</a></li>
+						<li><a href="mujer urbano.html">Mujer Urbano</a></li> 
+						<li><a href="mujer tenis.html">Mujer Tenis</a></li> 
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="footer_box">
+						<h4><a href="contact.html">Contacto</a></h4> 
+						<li><a href="#">Ubicación</a></li>
+						<li>
+							<p style="color: white;">Nos encontramos en la
+								ciudad de San Francisco
+								del Rincón, Gto.</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="footer_box">
+						<h4>Newsletter</h4>
+						<div class="footer_search">
+							<form>
+								<input type="text" value="Envia tu email" onfocus="this.value = '';"
+									onblur="if (this.value == '') {this.value = 'Enter your email';}">
+								<input type="submit" value="Enviar">
+							</form>
+						</div>
+						<ul class="social">
+							<li class="facebook"><a href="#"><span> </span></a></li>
+							<li class="twitter"><a href="#"><span> </span></a></li>
+							<li class="instagram"><a href="#"><span> </span></a></li>
+							<li class="pinterest"><a href="#"><span> </span></a></li>
+							<li class="youtube"><a href="#"><span> </span></a></li>
+						</ul>
+
+					</ul>
+				</div>
+			</div>
+			<div class="row footer_bottom">
+				<div class="copy">
+					<p>Copyright &copy; US OVER SHOES
+						<script>document.write(new Date().getFullYear());</script> All rights reserved
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+		aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Aviso de privacidad</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					Los datos personales que usted nos proporcione ya sea directamente, vía telefónica o vía internet podrán
+incluir de manera enunciativa, más no limitativa, lo siguiente: <br><br>
+Datos de Identificación: Su nombre, fecha de nacimiento, Registro Federal de Contribuyentes (RFC), edad,
+nacionalidad, Clave Única de Registro de Población (CURP), Número de Seguridad Social.<br><br>
+Datos de Contacto: Domicilio, correo electrónico y números telefónicos.<br><br>
+Datos Académicos y Laborales: Formación profesional y académica, experiencia laboral, referencias
+personales.<br><br>
+Datos Comerciales y Financieros: Número de cuenta bancaria, información de pagos, información de
+compras, Referencias comerciales y bancarias; datos que serán recabados sólo en los términos del artículo
+10 fracción IV de "La Ley".<br><br>
+Datos que, cuando los proporcione, quedarán resguardados en nuestra base de datos con el objeto de
+protegerlos para que no se realice ningún uso indebido de los mismos, por lo que nos responsabilizamos
+para lograr optimizar su información sin otro fin que el de servir fielmente a quienes nos confían sus datos
+personales.<br><br>
+Al obtener sus datos personales, se tiene como finalidad y destino el satisfacer la relación jurídica o
+contractual existente entre esta institución y usted; tratamiento que podrá consistir en la identificación de
+la persona, proveer servicios y productos requeridos, contacto, reclutamiento y selección, suministro de los
+insumos necesarios para nuestro correcto desarrollo, hacerle llegar los productos adquiridos, dándole el
+oportuno seguimiento a sus pedidos; así como para fines de publicidad y promoción con efectos
+mercadológicos, además de poner a su disposición nuestros servicios en el mercado en el ramo que hoy
+en día nos especializamos, enfocados en satisfacer sus requerimientos. La finalidad del tratamiento de sus
+datos personales sólo se concentra en las relaciones jurídicas que se tienen con clientes, proveedores y
+personal.<br><br>
+En el caso de que usted quiera limitar el uso o divulgación de sus datos personales, evitando recibir
+publicidad, promociones o evitar algún otro contacto de cualquier naturaleza usted podrá ponerse en
+contacto con nuestra área encargada del tratamiento de sus datos personales.<br><br>
+Para el caso de que usted quisiera Acceder, Rectificar, Cancelar u Oponerse (Derechos ARCO) al
+tratamiento de los datos y revocar el consentimiento que para tal fin nos haya otorgado, tácita o
+expresamente, lo podrá realizar en cualquier momento, para ello es necesario que usted presente solicitud
+la cual debe contener: Nombre del titular y domicilio o medio para comunicarle respuesta, documento que
+acredite su identidad, descripción del derecho que pretende ejercer y cualquier otro dato que facilite la
+localización de los datos. Una vez presentada esta solicitud, se le dará respuesta en un plazo no mayor a
+20 días a través del medio que proporcionó para contactarlo.<br><br>
+El área responsable de resguardar sus datos personales, así como dar continuidad a la solicitud que usted
+realice en cuanto a sus derechos ARCO o a limitar el uso y divulgación de sus datos, es el área de
+sistemas, la cual pone a su disposición el siguiente correo: UsOverShoes@gmail.com, con la finalidad de
+atender sus peticiones relacionadas al tratamiento de sus datos personales.<br><br>
+Le informamos que sus datos personales no serán transferidos a terceros, salvo en el caso de que usted
+proporcione como referencia a esta empresa. 
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button> 
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

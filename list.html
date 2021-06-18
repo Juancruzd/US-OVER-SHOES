@@ -1,0 +1,420 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>US OVER SHOES | Catalogo</title>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="images/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<script
+		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<script src="js/jquery.min.js"></script>
+	<!--start slider -->
+	<link rel="stylesheet" href="css/fwslider.css" media="all">
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/fwslider.js"></script>
+	<!--end slider -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+		integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$(".dropdown img.flag").addClass("flagvisibility");
+
+			$(".dropdown dt a").click(function () {
+				$(".dropdown dd ul").toggle();
+			});
+
+			$(".dropdown dd ul li a").click(function () {
+				var text = $(this).html();
+				$(".dropdown dt a span").html(text);
+				$(".dropdown dd ul").hide();
+				$("#result").html("Selected value is: " + getSelectedValue("sample"));
+			});
+
+			function getSelectedValue(id) {
+				return $("#" + id).find("dt a span.value").html();
+			}
+
+			$(document).bind('click', function (e) {
+				var $clicked = $(e.target);
+				if (!$clicked.parents().hasClass("dropdown"))
+					$(".dropdown dd ul").hide();
+			});
+
+
+			$("#flagSwitcher").click(function () {
+				$(".dropdown img.flag").toggleClass("flagvisibility");
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="header-left">
+						<div class="logo">
+							<a href="index.html"><img src="images/logo.png" alt="" /></a>
+						</div>
+						<div class="menu">
+							<a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+							<ul class="nav" id="nav">
+								<li class="current"><a href="list.html">Catalogo</a></li>
+								<li><a href="about.html">Nosotros</a></li>
+								<li><a href="contact.html">Contacto</a></li>
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="header_right">
+						<!-- start search-->
+						<div class="search-box">
+							<div id="sb-search" class="sb-search">
+								<form>
+									<input class="sb-search-input" placeholder=" Buscar" type="search" name="search"
+										id="search">
+									<input class="sb-search-submit" type="submit" value="">
+									<span class="sb-icon-search"> </span>
+								</form>
+							</div>
+						</div>
+						<!----search-scripts---->
+						<script src="js/classie.js"></script>
+						<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch(document.getElementById('sb-search'));
+						</script> 
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="banner">
+		<!-- start slider -->
+		<div id="fwslider">
+			<div class="slider_container">
+				<div class="slide">
+					<!-- Slide image -->
+					<img src="images/slider/FCTN1.jpg" class="img-responsive" alt="" />
+					<!-- /Slide image -->
+					<!-- Texts container -->
+					<div class="slide_content">
+						<div class="slide_content_wrap">
+							<!-- Text title -->
+							<h1 class="title">Estilo deportivo para ti </h1>
+							<!-- /Text title -->
+							<div class="button"><a href="#">Detalles</a></div>
+						</div>
+					</div>
+					<!-- /Texts container -->
+				</div>
+				<!-- /Duplicate to create more slides -->
+				<div class="slide">
+					<img src="images/slider/FCTN2.jpg" class="img-responsive" alt="" />
+					<div class="slide_content">
+						<div class="slide_content_wrap">
+							<!-- Text title -->
+							<h1 class="title">Estilo deportivo para ti </h1>
+							<!-- /Text title -->
+							<div class="button"><a href="#">Detalles</a></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="slide">
+					<img src="images/slider/FCZA2.jpg" class="img-responsive" alt="" />
+					<div class="slide_content">
+						<div class="slide_content_wrap">
+							<!-- Text title -->
+							<h1 class="title">Estilo deportivo para ti </h1>
+							<!-- /Text title -->
+							<div class="button"><a href="#">Detalles</a></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="slide">
+					<img src="images/slider/FOTO2.jpg" class="img-responsive" alt="" />
+					<div class="slide_content">
+						<div class="slide_content_wrap">
+							<!-- Text title -->
+							<h1 class="title">Estilo deportivo para ti </h1>
+							<!-- /Text title -->
+							<div class="button"><a href="#">Detalles</a></div>
+						</div>
+					</div>
+				</div>
+				<!--/slide -->
+			</div>
+			<div class="timers"></div>
+			<div class="slidePrev"><span></span></div>
+			<div class="slideNext"><span></span></div>
+		</div>
+		<!--/slider -->
+	</div>
+
+	<div class="main">
+		<div class="shop_top">
+			<div class="container">
+				<div class="row shop_box-top">
+					<div class="col-md-3 shop_box"><a href="mu1.html">
+							<img src="images/catalogo/mujer urbano/FCUN1.jpg" class="img-responsive" alt="" style="border: 1px solid #E0E0E0;"  />
+							
+							<div class="shop_desc">
+								<h3><a href="#">aliquam volutp</a></h3>
+								<p>Lorem ipsum consectetuer adipiscing </p>
+								
+								
+							</div>
+						</a></div>
+					<div class="col-md-3 shop_box"><a href="mu2.html">
+							<img src="images/catalogo/mujer urbano/FCUNC1.jpg" class="img-responsive" alt="" style="border: 1px solid #E0E0E0;"  />
+							
+							<div class="shop_desc">
+								<h3><a href="#">aliquam volutp</a></h3>
+								<p>Lorem ipsum consectetuer adipiscing </p>
+								
+								
+							</div>
+						</a></div>
+					<div class="col-md-3 shop_box"><a href="mu3.html">
+							<img src="images/catalogo/mujer urbano/FCUP1.jpg" class="img-responsive" alt="" style="border: 1px solid #E0E0E0;"  />
+							
+							<div class="shop_desc">
+								<h3><a href="#">aliquam volutp</a></h3>
+								<p>Lorem ipsum consectetuer adipiscing </p>
+								
+								
+							</div>
+						</a></div>
+					<div class="col-md-3 shop_box"><a href="mu4.html">
+							<img src="images/catalogo/mujer urbano/FCUR1.jpg" class="img-responsive" alt=""  style="border: 1px solid #E0E0E0;" />
+							
+							<div class="shop_desc">
+								<h3><a href="#">aliquam volutp</a></h3>
+								<p>Lorem ipsum consectetuer adipiscing </p>
+								
+								
+							</div>
+						</a></div>
+				</div> 
+				<div class="row shop_box-top">
+					<div class="col-md-3 shop_box"><a href="hu1.html">
+							<img src="images/catalogo/hombre urbano/FAL1.jpg" class="img-responsive" alt="" style="border: 1px solid #E0E0E0;"  />
+							
+							<div class="shop_desc">
+								<h3><a href="#">aliquam volutp</a></h3>
+								<p>Lorem ipsum consectetuer adipiscing </p>
+								
+								
+							</div>
+						</a></div>
+					<div class="col-md-3 shop_box"><a href="hu2.html">
+							<img src="images/catalogo/hombre urbano/FRVL1.jpg" class="img-responsive" alt="" style="border: 1px solid #E0E0E0;"  />
+							
+							<div class="shop_desc">
+								<h3><a href="#">aliquam volutp</a></h3>
+								<p>Lorem ipsum consectetuer adipiscing </p>
+								
+								
+							</div>
+						</a></div>
+					<div class="col-md-3 shop_box"><a href="hu3.html">
+							<img src="images/catalogo/hombre urbano/FTBL1.jpg" class="img-responsive" alt="" style="border: 1px solid #E0E0E0;"  />
+							
+							<div class="shop_desc">
+								<h3><a href="#">aliquam volutp</a></h3>
+								<p>Lorem ipsum consectetuer adipiscing </p>
+								
+								
+							</div>
+						</a></div>
+					<div class="col-md-3 shop_box"><a href="hu4.html">
+							<img src="images/catalogo/hombre urbano/FTARL1.jpg" class="img-responsive" alt=""  style="border: 1px solid #E0E0E0;" />
+							
+							<div class="shop_desc">
+								<h3><a href="#">aliquam volutp</a></h3>
+								<p>Lorem ipsum consectetuer adipiscing </p>
+								
+								
+							</div>
+						</a></div>
+				</div> 
+				<div class="row shop_box-top">
+					<div class="col-md-3 shop_box"><a href="mt1.html">
+							<img src="images/catalogo/mujer tenis/FTAVL1.jpg" class="img-responsive" alt="" style="border: 1px solid #E0E0E0;"  />
+							
+							<div class="shop_desc">
+								<h3><a href="#">aliquam volutp</a></h3>
+								<p>Lorem ipsum consectetuer adipiscing </p>
+								
+								
+							</div>
+						</a></div>
+					<div class="col-md-3 shop_box"><a href="mt2.html">
+							<img src="images/catalogo/mujer tenis/FTRL1.jpg" class="img-responsive" alt="" style="border: 1px solid #E0E0E0;"  />
+							
+							<div class="shop_desc">
+								<h3><a href="#">aliquam volutp</a></h3>
+								<p>Lorem ipsum consectetuer adipiscing </p>
+								
+								
+							</div>
+						</a></div>
+					<div class="col-md-3 shop_box"><a href="mt3.html">
+							<img src="images/catalogo/mujer tenis/FTBC1.jpg" class="img-responsive" alt="" style="border: 1px solid #E0E0E0;"  />
+							
+							<div class="shop_desc">
+								<h3><a href="#">aliquam volutp</a></h3>
+								<p>Lorem ipsum consectetuer adipiscing </p>
+								
+								
+							</div>
+						</a></div>
+					<div class="col-md-3 shop_box"><a href="mt4.html">
+							<img src="images/catalogo/mujer tenis/FTDL1.jpg" class="img-responsive" alt=""  style="border: 1px solid #E0E0E0;" />
+							
+							<div class="shop_desc">
+								<h3><a href="#">aliquam volutp</a></h3>
+								<p>Lorem ipsum consectetuer adipiscing </p>
+								
+								
+							</div>
+						</a></div>
+				</div> 
+				<div class="row shop_box-top">
+					<div class="col-md-3 shop_box"><a href="ht1.html">
+							<img src="images/catalogo/hombre tenis/FTGL1.jpg" class="img-responsive" alt="" style="border: 1px solid #E0E0E0;"  />
+							
+							<div class="shop_desc">
+								<h3><a href="#">aliquam volutp</a></h3>
+								<p>Lorem ipsum consectetuer adipiscing </p>
+								
+								
+							</div>
+						</a></div>
+					<div class="col-md-3 shop_box"><a href="ht2.html">
+							<img src="images/catalogo/hombre tenis/FTNL2.jpg" class="img-responsive" alt="" style="border: 1px solid #E0E0E0;"  />
+							
+							<div class="shop_desc">
+								<h3><a href="#">aliquam volutp</a></h3>
+								<p>Lorem ipsum consectetuer adipiscing </p>
+								
+								
+							</div>
+						</a></div>
+					<div class="col-md-3 shop_box"><a href="ht3.html">
+							<img src="images/catalogo/hombre tenis/FTGNL1.jpg" class="img-responsive" alt="" style="border: 1px solid #E0E0E0;"  />
+							
+							<div class="shop_desc">
+								<h3><a href="#">aliquam volutp</a></h3>
+								<p>Lorem ipsum consectetuer adipiscing </p>
+								
+								
+							</div>
+						</a></div>
+					<div class="col-md-3 shop_box"><a href="ht4.html">
+							<img src="images/catalogo/hombre tenis/FTAL1.jpg" class="img-responsive" alt=""  style="border: 1px solid #E0E0E0;" />
+							
+							<div class="shop_desc">
+								<h3><a href="#">aliquam volutp</a></h3>
+								<p>Lorem ipsum consectetuer adipiscing </p>
+								
+								
+							</div>
+						</a></div>
+				</div> 
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<ul class="footer_box">
+						<h4><a href="about.html">Nosotros</a></h4>
+						<li>
+							<p style="color: white;">Somos una empresa dedicada
+								al calzado a tu gusto </p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="footer_box">
+						<h4><a href="list.html">Catalogo</a></h4>
+						<li><a href="hombre urbano.html">Hombre Urbano</a></li>
+						<li><a href="hombre tenis.html">Hombre Tenis</a></li>
+						<li><a href="mujer urbano.html">Mujer Urbano</a></li> 
+						<li><a href="mujer tenis.html">Mujer Tenis</a></li> 
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="footer_box">
+						<h4><a href="contact.html">Contacto</a></h4> 
+						<li><a href="#">Ubicación</a></li>
+						<li>
+							<p style="color: white;">Nos encontramos en la
+								ciudad de San Francisco
+								del Rincón, Gto.</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="footer_box">
+						<h4>Newsletter</h4>
+						<div class="footer_search">
+							<form>
+								<input type="text" value="Envia tu email" onfocus="this.value = '';"
+									onblur="if (this.value == '') {this.value = 'Enter your email';}">
+								<input type="submit" value="Enviar">
+							</form>
+						</div>
+						<ul class="social">
+							<li class="facebook"><a href="#"><span> </span></a></li>
+							<li class="twitter"><a href="#"><span> </span></a></li>
+							<li class="instagram"><a href="#"><span> </span></a></li>
+							<li class="pinterest"><a href="#"><span> </span></a></li>
+							<li class="youtube"><a href="#"><span> </span></a></li>
+						</ul>
+
+					</ul>
+				</div>
+			</div>
+			<div class="row footer_bottom">
+				<div class="copy">
+					<p>Copyright &copy; US OVER SHOES
+						<script>document.write(new Date().getFullYear());</script> All rights reserved
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
